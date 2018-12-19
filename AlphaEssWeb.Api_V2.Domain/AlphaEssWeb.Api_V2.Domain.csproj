@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75A2EC63-66C6-46E6-BDC9-BB209B24AEDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlphaEssWeb.Api_V2.Domain</RootNamespace>
+    <AssemblyName>AlphaEssWeb.Api_V2.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard1.3\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.AttributedModel.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Convention.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Hosting.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Runtime.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.TypedParts.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.FileVersionInfo.4.3.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.StackTrace.4.3.0\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.6.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.3.0\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.4.3.0\lib\net46\System.Xml.XPath.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.XDocument.4.3.0\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlphaComplaintsProcessingDbContext.cs" />
+    <Compile Include="AlphaEssDbContext.cs" />
+    <Compile Include="AlphaEssDb_LogDbContext.cs" />
+    <Compile Include="AlphaEssDb_PowerDataDbContext.cs" />
+    <Compile Include="AlphaMicrogridDbContext.cs" />
+    <Compile Include="ComplaintStatus.cs" />
+    <Compile Include="DeviceCV.cs" />
+    <Compile Include="EnergyReportData.cs" />
+    <Compile Include="Entities\APP_Version.cs" />
+    <Compile Include="Entities\BASE_COUNTRY.cs" />
+    <Compile Include="Entities\BASE_ERRCODE.cs" />
+    <Compile Include="Entities\CompanyContactDetail.cs" />
+    <Compile Include="Entities\Complaints.cs" />
+    <Compile Include="Entities\ComplaintsComment.cs" />
+    <Compile Include="Entities\ComplaintsProcessing.cs" />
+    <Compile Include="Entities\ComplaintsProcessingAdditionalInfo.cs" />
+    <Compile Include="Entities\CustomerInfo.cs" />
+    <Compile Include="Entities\CustomerReviews.cs" />
+    <Compile Include="Entities\DevInfo.cs" />
+    <Compile Include="Entities\ElectricDispatchingControlRecord.cs" />
+    <Compile Include="Entities\EMSNode.cs" />
+    <Compile Include="Entities\MeterRecord.cs" />
+    <Compile Include="Entities\MicrogridAndSN.cs" />
+    <Compile Include="Entities\MicrogridInfo.cs" />
+    <Compile Include="Entities\MicrogridSummary.cs" />
+    <Compile Include="Entities\PowerData.cs" />
+    <Compile Include="Entities\Report_Energy.cs" />
+    <Compile Include="Entities\Report_Income.cs" />
+    <Compile Include="Entities\Report_Power.cs" />
+    <Compile Include="Entities\SchedulingStrategy.cs" />
+    <Compile Include="Entities\SYS_Country_Region.cs" />
+    <Compile Include="Entities\SysWeatherForecast.cs" />
+    <Compile Include="Entities\Sys_Company.cs" />
+    <Compile Include="Entities\Sys_Language.cs" />
+    <Compile Include="Entities\Sys_PurchasePrice.cs" />
+    <Compile Include="Entities\Sys_RemoteDispatch.cs" />
+    <Compile Include="Entities\Sys_ResellerLicense.cs" />
+    <Compile Include="Entities\Sys_SellPrice.cs" />
+    <Compile Include="Entities\Sys_ServicePartnerSn.cs" />
+    <Compile Include="Entities\UserLog.cs" />
+    <Compile Include="Entities\VUserAndRoles.cs" />
+    <Compile Include="EntityRepository.cs" />
+    <Compile Include="Extensions\APP_VersionRepositoryExtensions.cs" />
+    <Compile Include="Extensions\Report_EnergyRepositoryExtensions.cs" />
+    <Compile Include="Extensions\Report_PowerRepositoryExtensions.cs" />
+    <Compile Include="Extensions\Report_ProfitRepositoryExtensions.cs" />
+    <Compile Include="Extensions\SchedulingStrategyExtensions.cs" />
+    <Compile Include="Extensions\SYS_APIRepositoryExtensions.cs" />
+    <Compile Include="Extensions\Sys_LanguageRepositoryExtensions.cs" />
+    <Compile Include="Extensions\SYS_LICENSERepositoryExtensions.cs" />
+    <Compile Include="Extensions\Sys_PurchasePriceRepositoryExtensions.cs" />
+    <Compile Include="Extensions\SYS_ROLERepositoryExtensions.cs" />
+    <Compile Include="Extensions\Sys_SellPriceRepositoryExtensions.cs" />
+    <Compile Include="Extensions\SYS_SNRepositoryExtensions.cs" />
+    <Compile Include="Extensions\VT_SYSTEMRepositoryExtensions.cs" />
+    <Compile Include="FirmwareVersionData.cs" />
+    <Compile Include="LogLevel.cs" />
+    <Compile Include="MicrogridEntityRepository.cs" />
+    <Compile Include="PowerReportData.cs" />
+    <Compile Include="ProfitReportData.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\SYS_API.cs" />
+    <Compile Include="Entities\SYS_APPVERSION.cs" />
+    <Compile Include="Entities\SYS_APPVERSIONDETAIL.cs" />
+    <Compile Include="Entities\SYS_APPVERSIONREC.cs" />
+    <Compile Include="Entities\SYS_CONFIG.cs" />
+    <Compile Include="Entities\SYS_EMAILRULE.cs" />
+    <Compile Include="Entities\SYS_EMAILRULEUSER.cs" />
+    <Compile Include="Entities\SYS_LICENSE.cs" />
+    <Compile Include="Entities\SYS_LOG.cs" />
+    <Compile Include="Entities\SYS_MENU.cs" />
+    <Compile Include="Entities\SYS_MSG.cs" />
+    <Compile Include="Entities\SYS_MSGUSER.cs" />
+    <Compile Include="Entities\SYS_PRODATTACH.cs" />
+    <Compile Include="Entities\SYS_PRODLEAVEMSG.cs" />
+    <Compile Include="Entities\SYS_PRODUCT.cs" />
+    <Compile Include="Entities\SYS_PTYPE.cs" />
+    <Compile Include="Entities\SYS_PTYPEDETAIL.cs" />
+    <Compile Include="Entities\SYS_ROLE.cs" />
+    <Compile Include="Entities\SYS_ROLEMENU.cs" />
+    <Compile Include="Entities\SYS_ROLEUSER.cs" />
+    <Compile Include="Entities\SYS_SN.cs" />
+    <Compile Include="Entities\SYS_USER.cs" />
+    <Compile Include="Entities\SYS_USERSERVICEAREA.cs" />
+    <Compile Include="Entities\VT_CMD.cs" />
+    <Compile Include="Entities\VT_COLDATA.cs" />
+    <Compile Include="Entities\VT_SYSFAULT.cs" />
+    <Compile Include="Entities\VT_SYSINSTALL.cs" />
+    <Compile Include="Entities\VT_SYSINSTALLATTACH.cs" />
+    <Compile Include="Entities\VT_SYSMAINTAIN.cs" />
+    <Compile Include="Entities\VT_SYSTEM.cs" />
+    <Compile Include="Repositories\ComplaintsRepository.cs" />
+    <Compile Include="Repositories\IComplaintsRepository.cs" />
+    <Compile Include="Repositories\ISystemRepository.cs" />
+    <Compile Include="Repositories\IVtColdataRepository.cs" />
+    <Compile Include="Repositories\SystemRepository.cs" />
+    <Compile Include="Repositories\VtColdataRepository.cs" />
+    <Compile Include="Services\ApiService.cs" />
+    <Compile Include="Services\AppClientService.cs" />
+    <Compile Include="Services\CompanyContactDetailService.cs" />
+    <Compile Include="Services\ComplaintsService.cs" />
+    <Compile Include="Services\IApiService.cs" />
+    <Compile Include="Services\IAppClientService.cs" />
+    <Compile Include="Services\ICompanyContactDetailService.cs" />
+    <Compile Include="Services\IComplaintsService.cs" />
+    <Compile Include="Services\IMembershipService.cs" />
+    <Compile Include="Services\IMicrogridService.cs" />
+    <Compile Include="Services\IParameterValidateService.cs" />
+    <Compile Include="Extensions\SYS_USERRepositoryExtensions.cs" />
+    <Compile Include="Services\ISysMsgService.cs" />
+    <Compile Include="Services\ISystemService.cs" />
+    <Compile Include="Services\IWeatherForecastService.cs" />
+    <Compile Include="Services\MembershipService.cs" />
+    <Compile Include="Services\MicrogridService.cs" />
+    <Compile Include="Services\ParameterValidateService.cs" />
+    <Compile Include="Entities\SYS_USERAGREEMENT.cs" />
+    <Compile Include="Services\SysMsgService.cs" />
+    <Compile Include="Services\SystemService.cs" />
+    <Compile Include="Services\WeatherForecastService.cs" />
+    <Compile Include="SystemState.cs" />
+    <Compile Include="SystemSummaryStatisticsData.cs" />
+    <Compile Include="TokenHelper.cs" />
+    <Compile Include="UserWithRoles.cs" />
+    <Compile Include="ValidUserContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlphaEss.Api_V2.Domain\AlphaEss.Api_V2.Infrastructure.csproj">
+      <Project>{8db1b9c7-8ad6-444a-bc02-0009c4269be5}</Project>
+      <Name>AlphaEss.Api_V2.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlphaEssWeb.Api_V2.Model\AlphaEssWeb.Api_V2.Model.csproj">
+      <Project>{925b0f4e-5e24-499b-bbdb-37edc94114e4}</Project>
+      <Name>AlphaEssWeb.Api_V2.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

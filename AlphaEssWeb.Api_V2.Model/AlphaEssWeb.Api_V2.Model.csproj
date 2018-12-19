@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{925B0F4E-5E24-499B-BBDB-37EDC94114E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlphaEssWeb.Api_V2.Model</RootNamespace>
+    <AssemblyName>AlphaEssWeb.Api_V2.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.5.0\lib\netstandard1.3\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.AttributedModel.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Convention.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Hosting.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.Runtime.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.33.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Composition.TypedParts.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Console, Version=4.0.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.1\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Diagnostics.FileVersionInfo, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.FileVersionInfo.4.3.0\lib\net46\System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace, Version=4.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.StackTrace.4.3.0\lib\net46\System.Diagnostics.StackTrace.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection.Metadata, Version=1.4.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.6.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.3.0\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.4.3.0\lib\net46\System.Xml.XPath.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XPath.XDocument.4.3.0\lib\net46\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dtos\AppVersionDto.cs" />
+    <Compile Include="Dtos\BaseCountryDto.cs" />
+    <Compile Include="Dtos\BaseErrorCode.cs" />
+    <Compile Include="Dtos\CompanyContactDetailDto.cs" />
+    <Compile Include="Dtos\ComplaintsDto.cs" />
+    <Compile Include="Dtos\DeviceCVDto.cs" />
+    <Compile Include="Dtos\DeviceInfoDto.cs" />
+    <Compile Include="Dtos\IDto.cs" />
+    <Compile Include="Dtos\IPaginatedDto.cs" />
+    <Compile Include="Dtos\MicrogridInfoDto.cs" />
+    <Compile Include="Dtos\MicrogridSummaryDto.cs" />
+    <Compile Include="Dtos\PaginatedDto.cs" />
+    <Compile Include="Dtos\PowerDataDto.cs" />
+    <Compile Include="Dtos\RemoteDispatchDto.cs" />
+    <Compile Include="Dtos\ReportEnergyDto.cs" />
+    <Compile Include="Dtos\ReportProfitDto.cs" />
+    <Compile Include="Dtos\SchedulingStrategyDto.cs" />
+    <Compile Include="Dtos\SysApiDto.cs" />
+    <Compile Include="Dtos\SysLicenseDto.cs" />
+    <Compile Include="Dtos\SysMenuDto.cs" />
+    <Compile Include="Dtos\SysMsgDto.cs" />
+    <Compile Include="Dtos\SysRoleDto.cs" />
+    <Compile Include="Dtos\SysSnDto.cs" />
+    <Compile Include="Dtos\SystemStateDto.cs" />
+    <Compile Include="Dtos\SysUserAgreementDto.cs" />
+    <Compile Include="Dtos\SysUserDto.cs" />
+    <Compile Include="Dtos\SysWeatherForecastDto.cs" />
+    <Compile Include="Dtos\UserLoginDto.cs" />
+    <Compile Include="Dtos\VtColDataDto.cs" />
+    <Compile Include="Dtos\VtSystemDto.cs" />
+    <Compile Include="ExternalRequestModels\ExternalAddNewComplaintRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalAppClientRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalBaseRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalBindNewSystemRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalChangePwdRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalChangeUserInfoRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalElectricDispatchingControlRecordRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalEvaluateComplaintsRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalFileUploadRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetCompanyContactsRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetDeviceCVRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetDeviceInfoRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetFirmwareUpdateRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetMicrogridInfoRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetMicrogridSchedulingStrategyRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetMicrogridSummaryRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetMsgReauestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetProfitDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetSystemDetailRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetSystemSummaryStatisticsDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetUserAgreementRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalInstallNewSystemRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalLoginRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalMicrogridControlCommandRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetEnergeDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetPowerDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetComplaintsListRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalQuerySystemByUserRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalGetSystemStatusRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalRegisterRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalRetrievePwdRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalSetSystemRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalUpdateMsgFlagRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalUpdateSchedulingStrategyRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalUpdateSystemFirmwareRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\ExternalUserInfoRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2GetEnergySummaryRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2GetHistoryRunningDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2GetLastPowerDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2GetRunningDataRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2GetSystemListRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2LoginRequestModel.cs" />
+    <Compile Include="ExternalRequestModels\Externalv2RemoteDispatchRequestModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalAddNewComplaintsResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalAppClientResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalBaseResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalBindNewSystemResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalChangePasswordResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalChangeUserInfoResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalElectricDispatchingControlRecordResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalEvaluateComplaintsResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalFileUploadResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetCompanyContactsResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetComplaintsListResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetDeviceCVResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetDeviceInfoResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetEnergySummaryResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetFirmwareUpdateResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetMicrogridInfoResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetMicrogridSchedulingStrategyResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetMicrogridSummaryResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetMsgResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetProfitDataResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetSystemDetailResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetSystemSummaryStatisticsDataResponsModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetUserAgreementByLanguageCodeResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalInstallNewSystemResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalLastPowerDataResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalLoginResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalMicrogridControlCommandResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetEnergeDataResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalGetPowerDataResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalQuerySystemByUserResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalQuerySystemStatusResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalRegisterResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalRemoteDispatchResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalReportEnergyResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalRetrievePwdResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalSetSystemResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalSystemListResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalUpdateMsgFlagResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalUpdateSchedulingStrategyResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalUpdateSystemFirmwareResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalUserinfoResponseModel.cs" />
+    <Compile Include="ExternalResponseModels\ExternalVtColDataResponseModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestCommands\IRequestCommand.cs" />
+    <Compile Include="RequestCommands\PaginatedRequestCommand.cs" />
+    <Compile Include="Token.cs" />
+    <Compile Include="UserContext.cs" />
+    <Compile Include="Validation\MaximumAttribute.cs" />
+    <Compile Include="Validation\MinimumAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

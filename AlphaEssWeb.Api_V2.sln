@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEssWeb.Api_V2", "AlphaEssWeb.Api_V2\AlphaEssWeb.Api_V2.csproj", "{DF4B4C31-A4FB-4F5F-AFD7-E3A8F13EC040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEssWeb.Api_V2.WebHost", "AlphaEssWeb.Api_V2.WebHost\AlphaEssWeb.Api_V2.WebHost.csproj", "{04297EE8-684E-49DE-BAE5-C6120CE1514C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEssWeb.Api_V2.Domain", "AlphaEssWeb.Api_V2.Domain\AlphaEssWeb.Api_V2.Domain.csproj", "{75A2EC63-66C6-46E6-BDC9-BB209B24AEDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEssWeb.Api_V2.Model", "AlphaEssWeb.Api_V2.Model\AlphaEssWeb.Api_V2.Model.csproj", "{925B0F4E-5E24-499B-BBDB-37EDC94114E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEssWeb.Api_V2Tests", "AlphaEssWeb.Api_V2Tests\AlphaEssWeb.Api_V2Tests.csproj", "{709B00D7-BCCD-4E0F-9F7A-F2000A74C859}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{62083AE0-FB64-4A22-A86D-9398FEC82E8E}"
+	ProjectSection(SolutionItems) = preProject
+		doc\储能系统API文档_V2.0.pdf = doc\储能系统API文档_V2.0.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{940314F9-9C81-4BC7-978B-4483E375BB95}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEss.Api_V2.Infrastructure", "AlphaEss.Api_V2.Domain\AlphaEss.Api_V2.Infrastructure.csproj", "{8DB1B9C7-8AD6-444A-BC02-0009C4269BE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceDLL", "ReferenceDLL", "{A24CCB34-7EAF-4E54-980A-53267E8768B2}"
+	ProjectSection(SolutionItems) = preProject
+		ReferenceDLL\RemotingSocketServices.dll = ReferenceDLL\RemotingSocketServices.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaEss.Api_V2.InfrastructureTests", "AlphaEss.Api_V2.InfrastructureTests\AlphaEss.Api_V2.InfrastructureTests.csproj", "{DD9B3547-216F-444B-A67A-CA327C38872F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4B4C31-A4FB-4F5F-AFD7-E3A8F13EC040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4B4C31-A4FB-4F5F-AFD7-E3A8F13EC040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4B4C31-A4FB-4F5F-AFD7-E3A8F13EC040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4B4C31-A4FB-4F5F-AFD7-E3A8F13EC040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04297EE8-684E-49DE-BAE5-C6120CE1514C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04297EE8-684E-49DE-BAE5-C6120CE1514C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04297EE8-684E-49DE-BAE5-C6120CE1514C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04297EE8-684E-49DE-BAE5-C6120CE1514C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A2EC63-66C6-46E6-BDC9-BB209B24AEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A2EC63-66C6-46E6-BDC9-BB209B24AEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A2EC63-66C6-46E6-BDC9-BB209B24AEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A2EC63-66C6-46E6-BDC9-BB209B24AEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{925B0F4E-5E24-499B-BBDB-37EDC94114E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{925B0F4E-5E24-499B-BBDB-37EDC94114E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{925B0F4E-5E24-499B-BBDB-37EDC94114E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{925B0F4E-5E24-499B-BBDB-37EDC94114E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{709B00D7-BCCD-4E0F-9F7A-F2000A74C859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{709B00D7-BCCD-4E0F-9F7A-F2000A74C859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{709B00D7-BCCD-4E0F-9F7A-F2000A74C859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{709B00D7-BCCD-4E0F-9F7A-F2000A74C859}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB1B9C7-8AD6-444A-BC02-0009C4269BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB1B9C7-8AD6-444A-BC02-0009C4269BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB1B9C7-8AD6-444A-BC02-0009C4269BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB1B9C7-8AD6-444A-BC02-0009C4269BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD9B3547-216F-444B-A67A-CA327C38872F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD9B3547-216F-444B-A67A-CA327C38872F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD9B3547-216F-444B-A67A-CA327C38872F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD9B3547-216F-444B-A67A-CA327C38872F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://104.238.126.242:8080/tfs/alphaess
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AlphaEss.Api_V2.Domain\\AlphaEss.Api_V2.Infrastructure.csproj
+		SccProjectName1 = AlphaEss.Api_V2.Domain
+		SccLocalPath1 = AlphaEss.Api_V2.Domain
+		SccProjectUniqueName2 = AlphaEss.Api_V2.InfrastructureTests\\AlphaEss.Api_V2.InfrastructureTests.csproj
+		SccProjectName2 = AlphaEss.Api_V2.InfrastructureTests
+		SccLocalPath2 = AlphaEss.Api_V2.InfrastructureTests
+		SccProjectUniqueName3 = AlphaEssWeb.Api_V2.Domain\\AlphaEssWeb.Api_V2.Domain.csproj
+		SccProjectName3 = AlphaEssWeb.Api_V2.Domain
+		SccLocalPath3 = AlphaEssWeb.Api_V2.Domain
+		SccProjectUniqueName4 = AlphaEssWeb.Api_V2.Model\\AlphaEssWeb.Api_V2.Model.csproj
+		SccProjectName4 = AlphaEssWeb.Api_V2.Model
+		SccLocalPath4 = AlphaEssWeb.Api_V2.Model
+		SccProjectUniqueName5 = AlphaEssWeb.Api_V2.WebHost\\AlphaEssWeb.Api_V2.WebHost.csproj
+		SccProjectName5 = AlphaEssWeb.Api_V2.WebHost
+		SccLocalPath5 = AlphaEssWeb.Api_V2.WebHost
+		SccProjectUniqueName6 = AlphaEssWeb.Api_V2\\AlphaEssWeb.Api_V2.csproj
+		SccProjectName6 = AlphaEssWeb.Api_V2
+		SccLocalPath6 = AlphaEssWeb.Api_V2
+		SccProjectUniqueName7 = AlphaEssWeb.Api_V2Tests\\AlphaEssWeb.Api_V2Tests.csproj
+		SccProjectName7 = AlphaEssWeb.Api_V2Tests
+		SccLocalPath7 = AlphaEssWeb.Api_V2Tests
+	EndGlobalSection
+EndGlobal
